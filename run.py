@@ -36,17 +36,22 @@ def add_user_data_to_sheet(sheet, username, email):
     usernames = worksheet.col_values(1)
     emails = worksheet.col_values(2)
 
-    # Check if the username and email address already exist in the sheet
-    if username in usernames:
-        print('Error: username already exists')
-        return
-    if email in emails:
-        print('Error: email address already exists')
-        return
+    while True:
+        # Check if the username and email address already exist in the sheet
+        if username in usernames:
+            print('Error: username already exists')
+            username = input("Enter a different username: ")
+            continue
+        if email in emails:
+            print('Error: email address already exists')
+            email = input("Enter a different email address: ")
+            continue
 
-    # Append the data to the sheet
-    worksheet.append_row([username, email])
-    print('User data added successfully')
+        # If the username and email are not in the sheet, append the data and exit the loop
+        worksheet.append_row([username, email])
+        print('User data added successfully')
+        break
+
 
 def main():
     # Get the scoped credentials, client, and sheet
