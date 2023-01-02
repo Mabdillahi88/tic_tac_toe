@@ -54,4 +54,23 @@ def main():
     client = get_gspread_client(scoped_creds)
     sheet = get_sheet(client, SHEET_NAME)
 
-   
+    for player_num in range(1, 3):
+        # Set a flag to indicate if the input is valid
+        input_valid = False
+
+        # Run the loop until the input is valid
+        while not input_valid:
+            # Ask the user for their username and email
+            username = input(f'Enter the username for player {player_num}: ')
+            email = input(f'Enter the email address for player {player_num}: ')
+
+            # Validate the user input
+            if len(username) < 3:
+                print('Error: username must be at least 3 characters long')
+            elif not re.match(r"[^@]+@[^@]+\.[^@]+", email):
+                print('Error: email address is not valid')
+            else:
+                input_valid = True
+
+        # Add the user data to the sheet
+        add_user_data_to_sheet(sheet, username, email)
