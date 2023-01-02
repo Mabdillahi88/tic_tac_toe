@@ -22,3 +22,16 @@ def get_gspread_client(creds):
 
 def get_sheet(client, sheet_name):
     return client.open(sheet_name)
+
+def add_user_data_to_sheet(sheet, username, email):
+    # Get the first sheet in the workbook
+    worksheet = sheet.get_worksheet(0)
+
+    # Check if the headings are present in the first row
+    if worksheet.row_values(1) != ["Username", "Email"]:
+        # Insert the headings if they are not present
+        worksheet.insert_row(["Username", "Email"], 1)
+
+    # Get the values in the first and second columns of the sheet
+    usernames = worksheet.col_values(1)
+    emails = worksheet.col_values(2)
