@@ -48,5 +48,10 @@ def add_user_data_to_sheet(sheet, username, email):
     worksheet.append_row([username, email])
     print('User data added successfully')
 
+def main():
+    # Get the scoped credentials, client, and sheet
+    scoped_creds = get_scoped_credentials(SCOPES)
+    client = get_gspread_client(scoped_creds)
+    sheet = get_sheet(client, SHEET_NAME)
 
-
+   
