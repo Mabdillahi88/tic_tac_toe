@@ -35,3 +35,18 @@ def add_user_data_to_sheet(sheet, username, email):
     # Get the values in the first and second columns of the sheet
     usernames = worksheet.col_values(1)
     emails = worksheet.col_values(2)
+
+    # Check if the username and email address already exist in the sheet
+    if username in usernames:
+        print('Error: username already exists')
+        return
+    if email in emails:
+        print('Error: email address already exists')
+        return
+
+    # Append the data to the sheet
+    worksheet.append_row([username, email])
+    print('User data added successfully')
+
+
+
