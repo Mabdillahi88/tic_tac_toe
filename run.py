@@ -74,3 +74,9 @@ def main():
 
         # Add the user data to the sheet
         add_user_data_to_sheet(sheet, username, email)
+
+if __name__ == '__main__':
+    main()
+
+
+
