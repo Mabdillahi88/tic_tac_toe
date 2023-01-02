@@ -1,3 +1,17 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+import re
+import gspread
+from google.oauth2.service_account import Credentials
+import time
+from email_validator import validate_email, EmailNotValidError
+
+SCOPES = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/drive"
+]
+
+CREDS_FILE = 'creds.json'
+SHEET_NAME = 'Tic_tac_toe'
+
+
+
