@@ -43,3 +43,13 @@ def cls():
 
 def separate_line():
     print("\n" + "-"*30 + "\n")
+
+def main_menu() -> str:
+"""
+Display a welcome message and the rules of Tic-Tac-Toe
+Prompt the user to choose between logging in or registering
+"""
+print("Welcome to Tic-Tac-Toe!\n")
+print("In this game, you and your opponent will take turns placing X or O on a 3x3 grid. \nThe first player to get 3 of their symbols in a row (horizontally, vertically, or diagonally) wins the game.\n")
+
+
