@@ -36,3 +36,10 @@ def logo():
     time.sleep(1)
 print("Get ready to play Tic Tac Toe!")
 
+
+def cls():
+    os.system("cls" if os.name == "nt" else "clear")
+
+
+def separate_line():
+    print("\n" + "-"*30 + "\n")
