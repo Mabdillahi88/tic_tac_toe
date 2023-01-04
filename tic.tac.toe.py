@@ -80,3 +80,21 @@ if login_option_selected == "1":
     except EmailNotValidError as e:
         print(e)
         return main_menu()
+
+    # Check if login details are present in the sheet
+    try:
+        cell = sheet.find(username)
+        row = cell.row
+        stored_email = sheet.cell(row, 2).value
+        if stored_email == email:
+            # Login successful
+            print("Welcome back, {}!".format(username))
+            return username
+        else:
+            # Incorrect email
+            print("Incorrect email for the given username. Please try again or register a new account.")
+            return main_menu()
+    except gspread.exceptions.CellNotFound:
+        # Incorrect username
+        print("Username not found. Please try again or register a new account.")
+return main_menu()
