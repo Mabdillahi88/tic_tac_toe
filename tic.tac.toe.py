@@ -16,3 +16,23 @@ SCOPES = [
 CREDS_FILE = 'creds.json'
 SHEET_NAME = 'Tic_tac_toe'
 
+def logo():
+    """
+    Display game name
+    """
+    print(Col.BLUE + "Welcome to:")
+    print(" ")
+    print(Col.LOGO_Y + "      ____        ____")
+    print(Col.LOGO_Y + "     |    |      |    |")
+    print(Col.LOGO_R + "     |____|      |____|")
+    print(Col.LOGO_Y + "      ____        ____")
+    print(Col.LOGO_R + "     |    |      |    |")
+    print(Col.LOGO_Y + "     |____|      |____|")
+    print(" ")
+    print(" ")
+    print(Col.BLUE + "                                        Tic Tac Toe")
+    print(" ")
+    print(" ")
+    time.sleep(1)
+print("Get ready to play Tic Tac Toe!")
+
