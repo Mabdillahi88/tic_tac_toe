@@ -56,6 +56,11 @@ login_options = "1) Log in\n2) Register\n"
 login_option_selected = input("Please choose an option:\n" + login_options)
 separate_line()
 
+# Validate if answer is either 1 or 2
+while login_option_selected not in ("1", "2"):
+    print("Please choose between one of the two options:")
+    login_option_selected = input(login_options)
+    separate_line()
 
 
 
