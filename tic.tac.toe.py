@@ -52,4 +52,10 @@ Prompt the user to choose between logging in or registering
 print("Welcome to Tic-Tac-Toe!\n")
 print("In this game, you and your opponent will take turns placing X or O on a 3x3 grid. \nThe first player to get 3 of their symbols in a row (horizontally, vertically, or diagonally) wins the game.\n")
 
+login_options = "1) Log in\n2) Register\n"
+login_option_selected = input("Please choose an option:\n" + login_options)
+separate_line()
+
+
+
 
