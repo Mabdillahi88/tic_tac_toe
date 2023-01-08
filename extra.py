@@ -194,3 +194,31 @@ def main_menu() -> str:
     else:
         username, email = login_menu()
         create_account(username, email)
+
+
+
+        def main_menu():
+    """
+    Display a welcome message and the rules of Tic-Tac-Toe
+    Prompt the user to choose between logging in or registering
+    """
+    print("Welcome to Tic-Tac-Toe!\n")
+  
+    options = "1) Log in\n2) Register\n"
+    selection = input("Please choose an option:\n" + options)
+    separate_line()
+
+    # Validate if answer is either 1 or 2
+    while selection not in ("1", "2"):
+        print("Please choose between one of the two options:")
+        selection = input(options)
+        separate_line()
+    
+    if selection == "1":
+        add_new_users()
+  
+
+    elif selection == "2":
+        lets_play_tic_tac_toe()
+
+    return selection
