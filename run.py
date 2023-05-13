@@ -51,5 +51,3 @@ def add_user_data_to_sheet(sheet, username, email):
         worksheet.append_row([username, email])
         print('User data added successfully')
         break
-
-

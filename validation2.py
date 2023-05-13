@@ -4,8 +4,6 @@ from google.oauth2.service_account import Credentials
 import time
 from email_validator import validate_email, EmailNotValidError
 
-
-
 SCOPES = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
@@ -15,149 +13,70 @@ SCOPES = [
 CREDS_FILE = 'creds.json'
 SHEET_NAME = 'Tic_tac_toe'
 
+def get_scoped_credentials(scopes):
+    creds = Credentials.from_service_account_file(CREDS_FILE)
+    return creds.with_scopes(scopes)
 
-def register_player(username = None, email = None):
-    """
-    Register a new player using the provided username and email.
-    
-    Parameters:
-        username (str): The desired username.
-        email (str): The email address to associate with the username.
-    """
-    # Validate the email address
-    if username and email: 
+def get_gspread_client(creds):
+    return gspread.authorize(creds)
+
+def get_sheet(client, sheet_name):
+    return client.open(sheet_name)
+
+def add_user_data_to_sheet(sheet, player_num, username, email):
+    # Get the first sheet in the workbook
+    worksheet = sheet.get_worksheet(0)
+
+    # Check if the headings are present in the first row
+    if worksheet.row_values(1) != ["Username", "Email"]:
+        # Insert the headings if they are not present
+        worksheet.insert_row(["Username", "Email"], 1)
+
+    # Get the values in the first and second columns of the sheet
+    usernames = worksheet.col_values(1)
+    emails = worksheet.col_values(2)
+
+    while True:
         try:
+            # Validate the email address
             v = validate_email(email)
-            email = v["email"]  # Replace the email with the normalized form
+            email = v.email  # Replace the email with the normalized form
         except EmailNotValidError as e:
-            print(f"Invalid email address: {e}")
-            return False
+            print(f"Invalid email address: {str(e)}")
+            email = input("Enter a valid email address: ")
+            continue
 
-        # Check if the login details are already in use
-        if check_login(username, email):
-            print("Username and email are already in use")
-            return False
+        # Check if the username and email address already exist in the sheet
+        if username in usernames:
+            print(f'Error: {username} already exists')
+            username = input("Enter a different username: ")
+            continue
+        if email in emails:
+            print(f'Error: {email} already exists')
+            email = input("Enter a different email address: ")
+            continue
 
-        # Authenticate with Google Sheets API
-        creds = Credentials.from_service_account_file(CREDS_FILE, scopes=SCOPES)
-        client = gspread.authorize(creds)
+        # If the username and email are not in the sheet, append the data and exit the loop
+        worksheet.append_row([username, email])
+        print(f'Player {player_num} data added successfully')
+        break
 
-        # Open the sheet
-        sheet = client.open(SHEET_NAME).sheet1
-
-        # Add the new player to the sheet
-        sheet.append_row([username, email])
-        print("Registration successful")
-
-        # Prompt player1 to enter login details
-        player1_username = input("Player 1, please enter your chosen username: ")
-        player1_email = input("Player 1, please enter your email address: ")
-
-        # Prompt player2 to enter login details
-        player2_username = input("Player 2, please enter your chosen username: ")
-        player2_email = input("Player 2, please enter your email address: ")
-
-        # Register player1
-        if register_player(player1_username, player1_email):
-            print("Player 1 registered successfully")
-        else:
-            print("Player 1 registration failed")
-            print("try again")
-            register_player( username, email)
-
-
-
-        if register_player(player2_username, player2_email):
-            print("Player 2 registered successfully")
-            print("Welcome to Tic Tac Toe!")
-            start_tic_tac_toe()
-        else:
-            print("Player 2 registration failed")
-            print("try again")
-            register_player( username, email)
-    else: 
-        return
-    
-
-
-def check_login(username, email):
-    """
-    Check if the provided username and email are already in use.
-    
-    Parameters:
-        username (str): The username to check.
-        email (str): The email address to check.
-        
-    Returns:
-        bool: True if the login details are valid, False otherwise.
-    """
-    # Validate the email address
-    try:
-        v = validate_email(email)
-        email = v["email"]  # Replace the email with the normalized form
-    except EmailNotValidError as e:
-        print(f"Invalid email address: {e}")
-        return False
-
-    # Authenticate with Google Sheets API
-    creds = Credentials.from_service_account_file(CREDS_FILE, scopes=SCOPES)
-    client = gspread.authorize(creds)
-
-    # Open the sheet
-    sheet = client.open(SHEET_NAME).sheet1
-
-    # Search for the username and email in the sheet
-    cell = sheet.find(username)
-    if cell is None:
-        return False
-    row = cell.row
-    if sheet.cell(row, 2).value != email:
-        return False
-
-    return True
-
-    # Prompt player1 to enter login details
+# Usage example
 player1_username = input("Player 1, please enter your username: ")
 player1_email = input("Player 1, please enter your email address: ")
 
-# Prompt player2 to enter login details
 player2_username = input("Player 2, please enter your username: ")
 player2_email = input("Player 2, please enter your email address: ")
 
-# Check player1 login details
-if check_login(player1_username, player1_email):
-    print("Player 1 login successful")
-else:
-    print("Player 1 login failed")
-    print("Please register")
-    register_player(username=None, email=None)
+# Get the scoped credentials
+credentials = get_scoped_credentials(SCOPES)
 
-# Check player2 login details
-if check_login(player2_username, player2_email):
-    print("Player 2 login successful")
-    print("Welcome to Tic Tac Toe!")
-    start_tic_tac_toe()
-else:
-    print("Player 2 login failed")
-    print("Please register")
-    register_player(username=None, email=None)
+# Get the gspread client
+client = get_gspread_client(credentials)
 
+# Get the sheet
+sheet = get_sheet(client, SHEET_NAME)
 
-    
-def register_player(username, email):
-    """
-    Register a new player using the provided username and email.
-    
-    Parameters:
-        username (str): The desired username.
-        email (str): The email address to associate with the username.
-    """
-    # Validate the email address
-    try:
-        v = validate_email(email)
-        email = v["email"]  # Replace the email with the normalized form
-    except EmailNotValidError as e:
-        print(f"Invalid email address: {e}")
-        return False
-
- 
+# Add user data to the sheet
+add_user_data_to_sheet(sheet, 1, player1_username, player1_email)
+add_user_data_to_sheet(sheet, 2, player2_username, player2_email)
