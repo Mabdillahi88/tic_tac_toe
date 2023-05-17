@@ -1,7 +1,5 @@
-import re
 import gspread
 from google.oauth2.service_account import Credentials
-import time
 from email_validator import validate_email, EmailNotValidError
 
 SCOPES = [
@@ -61,22 +59,41 @@ def add_user_data_to_sheet(sheet, player_num, username, email):
         print(f'Player {player_num} data added successfully')
         break
 
-# Usage example
-player1_username = input("Player 1, please enter your username: ")
-player1_email = input("Player 1, please enter your email address: ")
+def login_or_register(sheet, player_num):
+    while True:
+        print(f"Player {player_num}, please choose an option:")
+        print("1) Login")
+        print("2) Register")
+        selection = input("Enter your choice: ")
 
-player2_username = input("Player 2, please enter your username: ")
-player2_email = input("Player 2, please enter your email address: ")
+        if selection == "1":
+            username = input("Enter your username: ")
+            email = input("Enter your email address: ")
+
+            # Check if the username and email exist in the sheet
+            worksheet = sheet.get_worksheet(0)
+            usernames = worksheet.col_values(1)
+            emails = worksheet.col_values(2)
+            if username in usernames and email in emails:
+                print(f"Welcome back, {username}!")
+                return username
+            else:
+                print("Invalid username or email. Please try again or register.")
+
+        elif selection == "2":
+            username = input("Enter a new username: ")
+            email = input("Enter a new email address: ")
+
+            # Add user data to the sheet
+            try:
+                add_user_data_to_sheet(sheet, player_num, username, email)
+                print("Registration successful.")
+                return username
+            except Exception as e:
+                print(f"An error occurred during registration: {e}")
+                print("Please try again.")
+
+        else:
+            print("Invalid option selected. Please choose either 1 or 2.")
 
 # Get the scoped credentials
-credentials = get_scoped_credentials(SCOPES)
-
-# Get the gspread client
-client = get_gspread_client(credentials)
-
-# Get the sheet
-sheet = get_sheet(client, SHEET_NAME)
-
-# Add user data to the sheet
-add_user_data_to_sheet(sheet, 1, player1_username, player1_email)
-add_user_data_to_sheet(sheet, 2, player2_username, player2_email)
