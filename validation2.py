@@ -70,3 +70,17 @@ def login_or_register(sheet, player_num):
         if selection == "1":
             username = input("Enter your username: ")
             email = input("Enter your email address: ")
+
+            # Check if the username and email exist in the sheet
+            worksheet = sheet.get_worksheet(0)
+            usernames = worksheet.col_values(1)
+            emails = worksheet.col_values(2)
+            if username in usernames and email in emails:
+                print(f"Welcome back, {username}!")
+                return username
+            else:
+                print("Invalid username or email. Please try again or register.")
+
+        elif selection == "2":
+            username = input("Enter a new username: ")
+            email = input("Enter a new email address: ")
