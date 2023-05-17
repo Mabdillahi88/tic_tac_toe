@@ -2,6 +2,7 @@ import gspread
 from google.oauth2.service_account import Credentials
 from email_validator import validate_email, EmailNotValidError
 
+
 SCOPES = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
