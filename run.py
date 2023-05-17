@@ -89,3 +89,20 @@ class NoughtsAndCrossesBoard:
                     print(f"Player {winner} wins!")
                 break
             self.game.switch_player()
+
+def lets_play_noughts_and_crosses():
+    print("Welcome to Noughts and Crosses!")
+    print("The rules of the game are as follows:")
+    print("1. The game is played on a 3x3 grid.")
+    print("2. Players take turns placing their respective symbols (X or O) on the grid.")
+    print("3. The first player to get 3 of their symbols in a row (horizontally, vertically, or diagonally) wins the game.")
+    print("4. If all of the spaces on the grid are filled and no player has won, the game is a tie.")
+    print("Let's begin!")
+    print()
+
+    game = NoughtsAndCrossesGame()
+    board = NoughtsAndCrossesBoard(game)
+    board.play_game()
+
+if __name__ == "__main__":
+    lets_play_noughts_and_crosses()
