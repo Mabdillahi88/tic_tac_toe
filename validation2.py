@@ -44,3 +44,13 @@ def add_user_data_to_sheet(sheet, player_num, username, email):
             print(f"Invalid email address: {str(e)}")
             email = input("Enter a valid email address: ")
             continue
+
+        # Check if the username and email address already exist in the sheet
+        if username in usernames:
+            print(f'Error: {username} already exists')
+            username = input("Enter a different username: ")
+            continue
+        if email in emails:
+            print(f'Error: {email} already exists')
+            email = input("Enter a different email address: ")
+            continue
