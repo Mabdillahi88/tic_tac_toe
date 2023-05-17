@@ -34,3 +34,13 @@ def add_user_data_to_sheet(sheet, player_num, username, email):
     # Get the values in the first and second columns of the sheet
     usernames = worksheet.col_values(1)
     emails = worksheet.col_values(2)
+
+    while True:
+        try:
+            # Validate the email address
+            v = validate_email(email)
+            email = v.email  # Replace the email with the normalized form
+        except EmailNotValidError as e:
+            print(f"Invalid email address: {str(e)}")
+            email = input("Enter a valid email address: ")
+            continue
