@@ -105,3 +105,11 @@ client = get_gspread_client(credentials)
 
 # Get the sheet
 sheet = get_sheet(client, SHEET_NAME)
+
+# Prompt players to login or register
+player1_username = login_or_register(sheet, 1)
+player2_username = login_or_register(sheet, 2)
+
+print(f"Player 1: {player1_username}")
+print(f"Player 2: {player2_username}")
+
