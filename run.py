@@ -14,3 +14,20 @@ SCOPES = [
     "https://www.googleapis.com/auth/drive.file",
     "https://www.googleapis.com/auth/drive"
 ]
+
+def lets_play_noughts_and_crosses():
+    player1_username, player2_username = validation2.get_players()
+
+def cls():
+    """
+    Clear the terminal screen.
+    """
+    os.system("cls" if os.name == "nt" else "clear")
+
+def separate_line():
+    """
+    Print a line separator.
+    """
+    print("\n" + "-"*30 + "\n")
+
+
