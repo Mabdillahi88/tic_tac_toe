@@ -96,3 +96,12 @@ def login_or_register(sheet, player_num):
 
         else:
             print("Invalid option selected. Please choose either 1 or 2.")
+
+# Get the scoped credentials
+credentials = get_scoped_credentials(SCOPES)
+
+# Get the gspread client
+client = get_gspread_client(credentials)
+
+# Get the sheet
+sheet = get_sheet(client, SHEET_NAME)
