@@ -97,3 +97,18 @@ def login_or_register(sheet, player_num):
             print("Invalid option selected. Please choose either 1 or 2.")
 
 # Get the scoped credentials
+credentials = get_scoped_credentials(SCOPES)
+
+# Get the gspread client
+client = get_gspread_client(credentials)
+
+# Get the sheet
+sheet = get_sheet(client, SHEET_NAME)
+
+# Prompt players to login or register
+player1_username = login_or_register(sheet, 1)
+player2_username = login_or_register(sheet, 2)
+
+print(f"Player 1: {player1_username}")
+print(f"Player 2: {player2_username}")
+
