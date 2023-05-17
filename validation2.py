@@ -84,3 +84,15 @@ def login_or_register(sheet, player_num):
         elif selection == "2":
             username = input("Enter a new username: ")
             email = input("Enter a new email address: ")
+
+            # Add user data to the sheet
+            try:
+                add_user_data_to_sheet(sheet, player_num, username, email)
+                print("Registration successful.")
+                return username
+            except Exception as e:
+                print(f"An error occurred during registration: {e}")
+                print("Please try again.")
+
+        else:
+            print("Invalid option selected. Please choose either 1 or 2.")
