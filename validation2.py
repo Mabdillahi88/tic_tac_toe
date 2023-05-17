@@ -54,3 +54,8 @@ def add_user_data_to_sheet(sheet, player_num, username, email):
             print(f'Error: {email} already exists')
             email = input("Enter a different email address: ")
             continue
+
+        # If the username and email are not in the sheet, append the data and exit the loop
+        worksheet.append_row([username, email])
+        print(f'Player {player_num} data added successfully')
+        break
