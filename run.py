@@ -1,6 +1,5 @@
 import gspread
 from google.oauth2.service_account import Credentials
-from email_validator import validate_email, EmailNotValidError
 import sys
 import time
 from time import sleep
