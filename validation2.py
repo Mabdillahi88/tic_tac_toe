@@ -59,3 +59,14 @@ def add_user_data_to_sheet(sheet, player_num, username, email):
         worksheet.append_row([username, email])
         print(f'Player {player_num} data added successfully')
         break
+
+def login_or_register(sheet, player_num):
+    while True:
+        print(f"Player {player_num}, please choose an option:")
+        print("1) Login")
+        print("2) Register")
+        selection = input("Enter your choice: ")
+
+        if selection == "1":
+            username = input("Enter your username: ")
+            email = input("Enter your email address: ")
