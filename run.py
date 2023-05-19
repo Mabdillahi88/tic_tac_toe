@@ -8,7 +8,9 @@ import random
 from validation2 import (get_scoped_credentials, get_gspread_client, get_sheet,
                          login_or_register)
 
-
+"""
+OAuth 2.0 scopes required to access Google Sheets and Drive
+"""
 SCOPES = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
@@ -34,11 +36,20 @@ def separate_line():
     print("\n" + "-"*30 + "\n")
 
 
+"""
+Board size for the Noughts and Crosses game
+"""
 BOARD_SIZE = 3
 
 
 class NoughtsAndCrossesGame:
+    """
+    Main game class, handling player turns, board status, and win conditions
+    """
     def __init__(self):
+        """
+        Initialize an empty game board and randomly select the starting player
+        """
         self.board = [
             [" " for _ in range(BOARD_SIZE)]
             for _ in range(BOARD_SIZE)
@@ -46,9 +57,15 @@ class NoughtsAndCrossesGame:
         self.current_player = random.choice(["X", "O"])
 
     def switch_player(self):
+        """
+        Switch the current player
+        """
         self.current_player = "O" if self.current_player == "X" else "X"
 
     def make_move(self, row, column):
+        """
+        Make a move on the board, if the move is valid
+        """
         if (0 <= row < BOARD_SIZE and 0 <= column < BOARD_SIZE
                 and self.board[row][column] == " "):
             self.board[row][column] = self.current_player
@@ -56,6 +73,9 @@ class NoughtsAndCrossesGame:
         return False
 
     def check_winner(self):
+        """
+        Check for a winner or a tie
+        """
         for i in range(BOARD_SIZE):
             if (self.board[i][0] == self.board[i][1] ==
                     self.board[i][2] != " "):
@@ -79,15 +99,27 @@ class NoughtsAndCrossesGame:
 
 
 class NoughtsAndCrossesBoard:
+    """
+    Class for the game board
+    """
     def __init__(self, game):
+        """
+        Initialize with a reference to the game instance
+        """
         self.game = game
 
     def print_board(self):
+        """
+        Print the current game board
+        """
         for row in self.game.board:
             print("|".join(row))
             print("-" * (BOARD_SIZE * 2 - 1))
 
     def play_game(self):
+        """
+        Main game loop: print board, accept player input, and check for game end conditions  # noqa
+        """
         print("Welcome to Noughts and Crosses!")
         self.print_board()
 
@@ -96,7 +128,6 @@ class NoughtsAndCrossesBoard:
                 "Enter the row (0-2) and column (0-2): ").split())
             if not self.game.make_move(row, column):
                 print("Invalid move. Try again.")
-
                 continue
             cls()
             self.print_board()
@@ -112,6 +143,9 @@ class NoughtsAndCrossesBoard:
 
 
 def lets_play_noughts_and_crosses():
+    """
+    The entry point of the Noughts and Crosses game
+    """
     print("Welcome to Noughts and Crosses!")
     print("The rules of the game are as follows:")
     print("1. The game is played on a 3x3 grid.")
@@ -129,4 +163,7 @@ def lets_play_noughts_and_crosses():
 
 
 if __name__ == "__main__":
+    """
+    Run the Noughts and Crosses game if the script is executed directly
+    """
     lets_play_noughts_and_crosses()

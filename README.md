@@ -1,31 +1,43 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Hangman 
 
-Welcome Mabdillahi88,
+- Hangman as the name suggest is a game for saving a man from "Hang Till Death" situation.
+- Its also a great way to learn new words and game helps to improve vocabulary.
+- Game is very simple:-
+   - Player get 6 chances to save the man
+   - Guess the correct words before chances are over and save the man.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+[Link to the website](https://hangman-pp.herokuapp.com/)
 
-## Reminders
+![An image previewing all devices](/assets/screenshots/preview.png)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+## Contents
+- [Project Goals](#project-goals)
+    - [User Stories](#user-stories)
+    - [Site Owner Goals](#site-owner-goals)
+- [User Experience](#user-experience)
+    - [Target Audience](#target-audience)
+    - [User Requirements and Expectations](#user-requirements-and-expectations)
+    - [User Manual](#user-manual)
+- [User Stories](#user-stories)
+    - [Users](#users)
+    - [Site Owner](#site-owner)
+- [Teachnical Design](#technical-design)
+    - [Flowchart](#flowchart)
+- [Technology Used](#technology-used)
+    - [Language used](#language-used)
+    -[Python Libraries used](#python-libraries-used)
+    - [Other websites/tools used](#other-websitestools-used)
+    - [3rd Party Python Libraries used](#3rd-party-python-libraries-used)
+- [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Features to be implemented](#features-to-be-implemented)
+- [Testing](#testing)
+    - [Manual Testing](#manual-testing)
+    - [Tested Devices with Browsers](#tested-devices-with-browsers)
+    - [Validator Testing](#validator-testing)
+    - [Bugs and Fixes](#bugs-and-fixes)
+    - [Unfixed Bugs](#unfixed-bugs)
+- [Deployment](#deployment)
+    - [Deploying in Heroku](#deploying-the-website-in-heroko)
+    - [Forking the GitHub Repository](#forking-the-github-repository)
+    - [Cloning of Repository i GitHub](#cloning-the-repository-in-github)
