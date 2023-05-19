@@ -9,7 +9,6 @@ from validation2 import (get_scoped_credentials, get_gspread_client, get_sheet,
                          login_or_register)
 
 
-# OAuth 2.0 scopes required to access Google Sheets and Drive
 SCOPES = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
@@ -58,13 +57,17 @@ class NoughtsAndCrossesGame:
 
     def check_winner(self):
         for i in range(BOARD_SIZE):
-            if (self.board[i][0] == self.board[i][1] == self.board[i][2] != " "):
+            if (self.board[i][0] == self.board[i][1] ==
+                    self.board[i][2] != " "):
                 return self.board[i][0]
-            if (self.board[0][i] == self.board[1][i] == self.board[2][i] != " "):
+            if (self.board[0][i] == self.board[1][i] ==
+                    self.board[2][i] != " "):
                 return self.board[0][i]
-        if (self.board[0][0] == self.board[1][1] == self.board[2][2] != " "):
+        if (self.board[0][0] == self.board[1][1] ==
+                self.board[2][2] != " "):
             return self.board[1][1]
-        if (self.board[0][2] == self.board[1][1] == self.board[2][0] != " "):
+        if (self.board[0][2] == self.board[1][1] ==
+                self.board[2][0] != " "):
             return self.board[1][1]
         if all(
             self.board[i][j] != " "
