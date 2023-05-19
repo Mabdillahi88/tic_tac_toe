@@ -32,33 +32,43 @@ def separate_line():
 
 BOARD_SIZE = 3
 
+
 class NoughtsAndCrossesGame:
     def __init__(self):
-        self.board = [[" " for _ in range(BOARD_SIZE)] for _ in range(BOARD_SIZE)]
+        self.board = [
+            [" " for _ in range(BOARD_SIZE)]
+            for _ in range(BOARD_SIZE)
+        ]
         self.current_player = random.choice(["X", "O"])
 
     def switch_player(self):
         self.current_player = "O" if self.current_player == "X" else "X"
 
     def make_move(self, row, column):
-        if 0 <= row < BOARD_SIZE and 0 <= column < BOARD_SIZE and self.board[row][column] == " ":
+        if (0 <= row < BOARD_SIZE and 0 <= column < BOARD_SIZE
+                and self.board[row][column] == " "):
             self.board[row][column] = self.current_player
             return True
         return False
 
-    def check_winner(self):
-        for i in range(BOARD_SIZE):
-            if self.board[i][0] == self.board[i][1] == self.board[i][2] != " ":
-                return self.board[i][0]
-            if self.board[0][i] == self.board[1][i] == self.board[2][i] != " ":
-                return self.board[0][i]
-        if self.board[0][0] == self.board[1][1] == self.board[2][2] != " ":
-            return self.board[1][1]
-        if self.board[0][2] == self.board[1][1] == self.board[2][0] != " ":
-            return self.board[1][1]
-        if all(self.board[i][j] != " " for i in range(BOARD_SIZE) for j in range(BOARD_SIZE)):
-            return "Tie"
-        return None
+def check_winner(self):
+    for i in range(BOARD_SIZE):
+        if (self.board[i][0] == self.board[i][1] == self.board[i][2] != " "):
+            return self.board[i][0]
+        if (self.board[0][i] == self.board[1][i] == self.board[2][i] != " "):
+            return self.board[0][i]
+    if (self.board[0][0] == self.board[1][1] == self.board[2][2] != " "):
+        return self.board[1][1]
+    if (self.board[0][2] == self.board[1][1] == self.board[2][0] != " "):
+        return self.board[1][1]
+    if all(
+        self.board[i][j] != " "
+        for i in range(BOARD_SIZE)
+        for j in range(BOARD_SIZE)
+    ):
+        return "Tie"
+    return None
+
 
 class NoughtsAndCrossesBoard:
     def __init__(self, game):
@@ -74,7 +84,8 @@ class NoughtsAndCrossesBoard:
         self.print_board()
 
         while True:
-            row, column = map(int, input("Enter the row (0-2) and column (0-2): ").split())
+            row, column = map(int, input(
+                "Enter the row (0-2) and column (0-2): ").split())
             if not self.game.make_move(row, column):
                 print("Invalid move. Try again.")
                 continue
@@ -89,6 +100,7 @@ class NoughtsAndCrossesBoard:
                     print(f"Player {winner} wins!")
                 break
             self.game.switch_player()
+
 
 def lets_play_noughts_and_crosses():
     print("Welcome to Noughts and Crosses!")
