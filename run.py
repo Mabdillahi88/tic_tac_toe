@@ -5,7 +5,8 @@ import time
 from time import sleep
 import os
 import random
-from validation2 import get_scoped_credentials, get_gspread_client, get_sheet, login_or_register
+from validation2 import (get_scoped_credentials, get_gspread_client, get_sheet,
+                         login_or_register)
 
 
 # OAuth 2.0 scopes required to access Google Sheets and Drive
@@ -15,8 +16,10 @@ SCOPES = [
     "https://www.googleapis.com/auth/drive"
 ]
 
+
 def lets_play_noughts_and_crosses():
     player1_username, player2_username = validation2.get_players()
+
 
 def cls():
     """
@@ -24,11 +27,13 @@ def cls():
     """
     os.system("cls" if os.name == "nt" else "clear")
 
+
 def separate_line():
     """
     Print a line separator.
     """
     print("\n" + "-"*30 + "\n")
+
 
 BOARD_SIZE = 3
 
@@ -51,23 +56,23 @@ class NoughtsAndCrossesGame:
             return True
         return False
 
-def check_winner(self):
-    for i in range(BOARD_SIZE):
-        if (self.board[i][0] == self.board[i][1] == self.board[i][2] != " "):
-            return self.board[i][0]
-        if (self.board[0][i] == self.board[1][i] == self.board[2][i] != " "):
-            return self.board[0][i]
-    if (self.board[0][0] == self.board[1][1] == self.board[2][2] != " "):
-        return self.board[1][1]
-    if (self.board[0][2] == self.board[1][1] == self.board[2][0] != " "):
-        return self.board[1][1]
-    if all(
-        self.board[i][j] != " "
-        for i in range(BOARD_SIZE)
-        for j in range(BOARD_SIZE)
-    ):
-        return "Tie"
-    return None
+    def check_winner(self):
+        for i in range(BOARD_SIZE):
+            if (self.board[i][0] == self.board[i][1] == self.board[i][2] != " "):
+                return self.board[i][0]
+            if (self.board[0][i] == self.board[1][i] == self.board[2][i] != " "):
+                return self.board[0][i]
+        if (self.board[0][0] == self.board[1][1] == self.board[2][2] != " "):
+            return self.board[1][1]
+        if (self.board[0][2] == self.board[1][1] == self.board[2][0] != " "):
+            return self.board[1][1]
+        if all(
+            self.board[i][j] != " "
+            for i in range(BOARD_SIZE)
+            for j in range(BOARD_SIZE)
+        ):
+            return "Tie"
+        return None
 
 
 class NoughtsAndCrossesBoard:
@@ -88,6 +93,7 @@ class NoughtsAndCrossesBoard:
                 "Enter the row (0-2) and column (0-2): ").split())
             if not self.game.make_move(row, column):
                 print("Invalid move. Try again.")
+
                 continue
             cls()
             self.print_board()
@@ -106,15 +112,18 @@ def lets_play_noughts_and_crosses():
     print("Welcome to Noughts and Crosses!")
     print("The rules of the game are as follows:")
     print("1. The game is played on a 3x3 grid.")
-    print("2. Players take turns placing their respective symbols (X or O) on the grid.")
-    print("3. The first player to get 3 of their symbols in a row (horizontally, vertically, or diagonally) wins the game.")
-    print("4. If all of the spaces on the grid are filled and no player has won, the game is a tie.")
-    print("Let's begin!")
-    print()
+    print("2. Players take turns placing their respective symbols "
+          "(X or O) on the grid.")
+    print("3. The first player to get 3 of their symbols in a row "
+          "(horizontally, vertically, or diagonally) wins the game.")
+    print("4. If all of the spaces on the grid are filled and "
+          "no player has won, the game is a tie.")
+    print("Let's begin!\n")
 
     game = NoughtsAndCrossesGame()
     board = NoughtsAndCrossesBoard(game)
     board.play_game()
+
 
 if __name__ == "__main__":
     lets_play_noughts_and_crosses()
