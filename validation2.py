@@ -14,19 +14,31 @@ SHEET_NAME = 'Tic_tac_toe'
 
 
 def get_scoped_credentials(scopes):
+    """
+    This function returns the credentials with the provided scopes.
+    """
     creds = Credentials.from_service_account_file(CREDS_FILE)
     return creds.with_scopes(scopes)
 
 
 def get_gspread_client(creds):
+    """
+    This function authenticates and returns a Google Sheets client.
+    """
     return gspread.authorize(creds)
 
 
 def get_sheet(client, sheet_name):
+    """
+    This function returns the Google Sheets document by its name.
+    """
     return client.open(sheet_name)
 
 
 def add_user_data_to_sheet(sheet, player_num, username, email):
+    """
+    This function adds the user data to the Google Sheets document.
+    """
     worksheet = sheet.get_worksheet(0)
     if worksheet.row_values(1) != ["Username", "Email"]:
         worksheet.insert_row(["Username", "Email"], 1)
@@ -57,6 +69,9 @@ def add_user_data_to_sheet(sheet, player_num, username, email):
 
 
 def login_or_register(sheet, player_num):
+    """
+    This function handles the user login or registration.
+    """
     while True:
         print(f"Player {player_num}, please choose an option:")
         print("1) Login")
@@ -89,6 +104,15 @@ def login_or_register(sheet, player_num):
             print("Invalid option selected. Please choose either 1 or 2.")
 
 
+"""
+The program starts here.
+
+First, it gets credentials with the defined SCOPES. Then, it gets the
+Google Sheets client with these credentials. It then accesses the Google
+Sheets document by its name.
+
+Two players log in or register, and their usernames are printed out.
+"""
 credentials = get_scoped_credentials(SCOPES)
 client = get_gspread_client(credentials)
 sheet = get_sheet(client, SHEET_NAME)
