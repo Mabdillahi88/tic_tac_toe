@@ -1,14 +1,16 @@
-# Hangman 
+# Noughts and Crosses (Tic-Tac-Toe)  
 
-- Hangman as the name suggest is a game for saving a man from "Hang Till Death" situation.
-- Its also a great way to learn new words and game helps to improve vocabulary.
-- Game is very simple:-
-   - Player get 6 chances to save the man
-   - Guess the correct words before chances are over and save the man.
+Noughts and Crosses, also known as Tic-Tac-Toe, is a classic game played between two players.
+It's a great way to engage in friendly competition and to improve strategic thinking.
+The game rules are simple:
+Players alternate turns placing their mark (nought or cross) on a 3x3 grid.
+The goal is to get three of your own marks in a row, either horizontally, vertically, or diagonally.
+The first player to achieve this wins the game. If the entire grid is filled and no player has won, the game is a draw.
+It's all about outsmarting your opponent and predicting their moves. Enjoy!
 
-[Link to the website](https://hangman-pp.herokuapp.com/)
+[Link to the website](https://tic-tac-toe12.herokuapp.com/)
 
-![An image previewing all devices](/assets/screenshots/preview.png)
+![An image previewing all devices](/assets/screen_images/screen_image_responsive.JPG)
 
 ## Contents
 - [Project Goals](#project-goals)
