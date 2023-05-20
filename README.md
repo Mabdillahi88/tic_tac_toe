@@ -82,7 +82,7 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
      looking to kill time or to engage in a friendly competition.
 
 
-     ### User Requirements and Expectations
+   ### User Requirements
 
    - A classic and engaging game, offering a balance of strategy and fun.
    - Simple and intuitive navigation, making the game of Noughts and Crosses easy to play even for beginners.
@@ -90,3 +90,12 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
      competitive edge to the matches.
    - Secure and reliable log-in functionality, ensuring that only correctly authenticated users gain 
      access to their accounts for a safe and trusted gaming experience.
+
+   ### Game instruction Manual
+<details><summary>Click here to view instructions</summary>
+
+ - Upon launching the Noughts and Crosses game, users are given two options: to log in if they are 
+   returning players, or to register if they are new to the game.
+
+   
+
