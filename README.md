@@ -57,3 +57,14 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
     - Be able to read the rules
     - Be able to restart the game
     - Be able to use on different media (desktop, mobile, etc.)
+
+
+    ## Site Owner
+
+   - Create a Noughts and Crosses (Tic-Tac-Toe) game which is straightforward and clear to users
+   - Ensure that new users can sign up successfully
+   - Ensure that existing users can log in without issues
+   - Handle and display any errors clearly to the user
+   - Make sure users can easily understand how to play the game
+   - Provide comprehensive rules of the game for user reference
+   - Ensure users have the option to restart the game at any point
