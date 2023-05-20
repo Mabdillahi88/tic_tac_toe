@@ -228,10 +228,29 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
   ### User login/register page
 
    - This area shows the two options 1 and 2. 
-   -  Option 1 will asking you to log in with correct details.
+   - Option 1 will asking you to log in with correct details.
    - Option 2 will asking you to register with new username and email address
 
    User stories covered: 1 and 2
 
 ![User login ](/assets/screen_images/user%20login_register1.JPG)
 ![User Register](/assets/screen_images/user%20login_register2.JPG)
+
+
+### Selection of options
+
+ - If the wrong option is selected, error message will appear
+ - For option 1 and 2, if incorrect information is added error message will appear.
+
+User stories covered: 3, 9, 10
+
+![User error message ](/assets/screen_images/user_login_register_error1.JPG)
+![User error message 2 ](/assets/screen_images/user_login_register_error2.JPG)
+
+### User welcome
+
+ - Users will presented with a welcome message with the person's name
+
+ ![User welcome  ](/assets/screen_images/welcome_back_login.JPG)
+
+ 
