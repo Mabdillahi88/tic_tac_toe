@@ -68,3 +68,25 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
    - Make sure users can easily understand how to play the game
    - Provide comprehensive rules of the game for user reference
    - Ensure users have the option to restart the game at any point
+
+
+   ## User Experience
+   ### Target Audience
+
+   - Noughts and Crosses, also known as Tic-Tac-Toe, is a game that appeals to a broad audience.
+   - The game is family-friendly, involving no inappropriate content, making it suitable for children, 
+     adults, and the elderly alike.
+   - While the game is simple to understand, it helps foster critical thinking and strategic skills.  
+     Thus, it is not only fun but also beneficial for cognitive development.
+   - It's an excellent choice for people who want to engage in a quick and casual game, whether they're 
+     looking to kill time or to engage in a friendly competition.
+
+
+     ### User Requirements and Expectations
+
+   - A classic and engaging game, offering a balance of strategy and fun.
+   - Simple and intuitive navigation, making the game of Noughts and Crosses easy to play even for beginners.
+   - Personalisation of game experience by allowing the input of players' names, adding a personal    
+     competitive edge to the matches.
+   - Secure and reliable log-in functionality, ensuring that only correctly authenticated users gain 
+     access to their accounts for a safe and trusted gaming experience.
