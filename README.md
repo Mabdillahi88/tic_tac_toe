@@ -213,3 +213,25 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
  - GitPod     -  Coding environment.
  - Lucidchart -   Flowchart creation.
  - Heroku     -  Website deployment.
+
+ ## Features
+
+ ### Main Page
+
+   - Once the program is activated, it prompts the user, as Player 1, to provide input if they are an 
+     existing user or register as a new user.
+   
+   User stories covered: 1 and 2
+
+  ![Main](/assets/screen_images/Main_page.JPG)
+
+  ### User login/register page
+
+   - This area shows the two options 1 and 2. 
+   -  Option 1 will asking you to log in with correct details.
+   - Option 2 will asking you to register with new username and email address
+
+   User stories covered: 1 and 2
+
+![User login ](/assets/screen_images/user%20login_register1.JPG)
+![User Register](/assets/screen_images/user%20login_register2.JPG)
