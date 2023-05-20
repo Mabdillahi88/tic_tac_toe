@@ -129,11 +129,11 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
 
 - Once players have been logged in, they will be shown the rules.
 
-#### Start Game
+#### Start Game Mode
 
  - After the users read the rules, the game begins without delay.
 
- #### Game
+ #### Game Mode
 
   - When the game begins, an empty 3x3 grid is displayed.
   - The game will instruct the players:"Enter the row and column numbers (0-2), separated by a space"
@@ -142,3 +142,20 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
   - The game continues until one player gets three of their marks in a row, column, or diagonal, at which 
      point they win.
   - If all cells are filled and no player has won, the game is a draw.
+
+  #### Restart Game Mode
+
+   - When a game ends, either through a victory or a tie, a question will appear: "Do you want to play 
+     again: Y/N". This is to ask if players want to start a new game.
+   - To answer, players should type "Y" for Yes to play again, or "N" for No to end the session.
+   - If "Y" is chosen, a new game starts immediately, returning to the initial blank game board.
+   - If "N" is chosen, the game session will end, and the players will be logged out.
+   - If the input is not "Y" or "N", it's considered invalid. The game will show an error message and ask 
+     the question again until a valid response is provided. It's important to input the right letter to ensure smooth gameplay.
+
+</details>
+
+## User Stories
+
+### Users
+
