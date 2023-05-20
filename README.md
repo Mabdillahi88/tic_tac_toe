@@ -218,8 +218,8 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
 
  ### Main Page
 
-   - Once the program is activated, it prompts the user, as Player 1, to provide input if they are an 
-     existing user or register as a new user.
+  - Upon program activation, Player 1 is prompted to choose between logging in as an existing user or 
+    registering as a new user.
    
    User stories covered: 1 and 2
 
@@ -227,9 +227,8 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
 
   ### User login/register page
 
-   - This area shows the two options 1 and 2. 
-   - Option 1 will asking you to log in with correct details.
-   - Option 2 will asking you to register with new username and email address
+ - Users are presented with two options: log in with existing details (Option 1) or register with new 
+   username and email address (Option 2).
 
    User stories covered: 1 and 2
 
@@ -239,8 +238,7 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
 
 ### Selection of options
 
- - If the wrong option is selected, error message will appear
- - For option 1 and 2, if incorrect information is added error message will appear.
+ - Error messages displayed for incorrect options or input information.
 
 User stories covered: 3, 9, 10
 
@@ -249,8 +247,26 @@ User stories covered: 3, 9, 10
 
 ### User welcome
 
- - Users will presented with a welcome message with the person's name
+  - User greeted with welcome message displaying their name.
+ 
+ User stories covered: 7, 11
 
  ![User welcome  ](/assets/screen_images/welcome_back_login.JPG)
 
- 
+ ### New User
+
+   - Notification and update message displayed after adding a new user and added to google sheet
+
+ User stories covered: 8
+
+  ![New User  ](/assets/screen_images/New_user_register.JPG)
+  ![Updating google spreadsheet  ](/assets/screen_images/add_new%20_users.JPG)
+
+
+   ### Rules
+
+   - Clear and user-friendly rules presentation with a simple and structured layout.
+
+User stories covered: 4, 5, 7
+
+  ![Rules for the game](/assets/screen_images/rules_game.JPG)
