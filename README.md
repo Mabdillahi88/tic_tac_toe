@@ -91,7 +91,7 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
    - Secure and reliable log-in functionality, ensuring that only correctly authenticated users gain 
      access to their accounts for a safe and trusted gaming experience.
 
-   ### Game instruction Manual
+   ### Game instructions
 <details><summary>Click here to view instructions</summary>
 
  - Upon launching the Noughts and Crosses game, users are given two options: to log in if they are 
@@ -118,7 +118,7 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
      - They input their username.
      - They input their password.
 
-#### Player's greeting
+#### Player's welcome
 
 - After they successfully log in, the Noughts and Crosses game welcomes them with a greeting message, 
   prominently displaying their username.
