@@ -1,11 +1,14 @@
 # Noughts and Crosses (Tic-Tac-Toe)  
 
-Noughts and Crosses, also known as Tic-Tac-Toe, is a classic game played between two players.
-It's a great way to engage in friendly competition and to improve strategic thinking.
+- Noughts and Crosses, also known as Tic-Tac-Toe, is a classic game played between two players.
+- It's a great way to engage in friendly competition and to improve strategic thinking.
+
 The game rules are simple:
-Players alternate turns placing their mark (nought or cross) on a 3x3 grid.
-The goal is to get three of your own marks in a row, either horizontally, vertically, or diagonally.
-The first player to achieve this wins the game. If the entire grid is filled and no player has won, the game is a draw.
+- Players alternate turns placing their mark (nought or cross) on a 3x3 grid.
+- The goal is to get three of your own marks in a row, either horizontally, vertically, or diagonally.
+- The first player to achieve this wins the game. 
+- If the entire grid is filled and no player has won, the game is a draw.
+
 It's all about outsmarting your opponent and predicting their moves. Enjoy!
 
 [Link to the website](https://tic-tac-toe12.herokuapp.com/)
