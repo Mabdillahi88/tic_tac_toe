@@ -51,23 +51,23 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
     ## Project Goals
     ### User Stories
 
-    1.  Play Noughts and Crosses (Tic-Tac-Toe) game
-    2.  Be able to sign up as a new user
-    3.  Be able to login as an existing user
-    4.  Be able to read the rules
-    5.  Be able to restart the game
-    6.  Be able to use on different media (desktop, mobile, etc.)
+     - Play Noughts and Crosses (Tic-Tac-Toe) game
+     - Be able to sign up as a new user
+     - Be able to login as an existing user
+     - Be able to read the rules
+     - Be able to restart the game
+     - Be able to use on different media (desktop, mobile, etc.)
 
 
     ## Site Owner
 
-   7.   Create a Noughts and Crosses (Tic-Tac-Toe) game which is straightforward and clear to users
-   8.   Ensure that new users can sign up successfully
-   9.   Ensure that existing users can log in without issues
-   10.  Handle and display any errors clearly to the user
-   11.  Make sure users can easily understand how to play the game
-   12.  Provide comprehensive rules of the game for user reference
-   13.  Ensure users have the option to restart the game at any point
+      - Create a Noughts and Crosses (Tic-Tac-Toe) game which is straightforward and clear to users
+      - Ensure that new users can sign up successfully
+      - Ensure that existing users can log in without issues
+      - Handle and display any errors clearly to the user
+      - Make sure users can easily understand how to play the game
+      - Provide comprehensive rules of the game for user reference
+      - Ensure users have the option to restart the game at any point
 
 
    ## User Experience
@@ -131,4 +131,14 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
 
 #### Start Game
 
- - 
+ - After the users read the rules, the game begins without delay.
+
+ #### Game
+
+  - When the game begins, an empty 3x3 grid is displayed.
+  - The game will instruct the players:"Enter the row and column numbers (0-2), separated by a space"
+  - The player must input a row and a column number to place their mark.
+  - If the chosen cell is already occupied or if the input is invalid, an error is displayed.
+  - The game continues until one player gets three of their marks in a row, column, or diagonal, at which 
+     point they win.
+  - If all cells are filled and no player has won, the game is a draw.
