@@ -179,9 +179,5 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
 
 - [Lucidchart](https://www.lucidchart.com) help construct the flowchart below:
 
-<details>
-    <summary>Flowchart</summary>
-    <p>Nought and Crosses Flowchart</p>
 
     ![Nought and Crosses Flowchart](/assets/screen_images/Lucid_Flow_Chart.JPG)
-</details>
