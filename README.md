@@ -51,23 +51,23 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
     ## Project Goals
     ### User Stories
 
-    - Play Noughts and Crosses (Tic-Tac-Toe) game
-    - Be able to sign up as a new user
-    - Be able to login as an existing user
-    - Be able to read the rules
-    - Be able to restart the game
-    - Be able to use on different media (desktop, mobile, etc.)
+    1.  Play Noughts and Crosses (Tic-Tac-Toe) game
+    2.  Be able to sign up as a new user
+    3.  Be able to login as an existing user
+    4.  Be able to read the rules
+    5.  Be able to restart the game
+    6.  Be able to use on different media (desktop, mobile, etc.)
 
 
     ## Site Owner
 
-   - Create a Noughts and Crosses (Tic-Tac-Toe) game which is straightforward and clear to users
-   - Ensure that new users can sign up successfully
-   - Ensure that existing users can log in without issues
-   - Handle and display any errors clearly to the user
-   - Make sure users can easily understand how to play the game
-   - Provide comprehensive rules of the game for user reference
-   - Ensure users have the option to restart the game at any point
+   7.   Create a Noughts and Crosses (Tic-Tac-Toe) game which is straightforward and clear to users
+   8.   Ensure that new users can sign up successfully
+   9.   Ensure that existing users can log in without issues
+   10.  Handle and display any errors clearly to the user
+   11.  Make sure users can easily understand how to play the game
+   12.  Provide comprehensive rules of the game for user reference
+   13.  Ensure users have the option to restart the game at any point
 
 
    ## User Experience
@@ -102,11 +102,11 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
    #### Register
 
    - If you're new to Noughts and Crosses, you'll need to make an account.
-   - You'll just need to pick a name and password for your account.
+   - You'll just need to pick a name and email address for your account.
    - After you're done signing up, you can log in and start playing.
    - Here's what you do:
      - Pick a username you like.
-     - Choose a password to keep your account safe.
+     - Choose a email address to keep your account safe.
 
    #### Login
 
@@ -118,12 +118,12 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
      - "register or login, please choose option 1 or 2". 
    - You will choose option 1:
      - They input their username.
-     - They input their password.
+     - They input their email address .
 
 #### Player's welcome
 
 - After they successfully log in, the Noughts and Crosses game welcomes them with a greeting message, 
-  prominently displaying their username.
+  displaying their username.
 
 #### Rules
 
