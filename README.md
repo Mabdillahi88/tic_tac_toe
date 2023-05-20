@@ -61,14 +61,13 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
 
     ## Site Owner
 
-      - Create a Noughts and Crosses (Tic-Tac-Toe) game which is straightforward and clear to users
-      - Ensure that new users can sign up successfully
-      - Ensure that existing users can log in without issues
-      - Handle and display any errors clearly to the user
-      - Make sure users can easily understand how to play the game
-      - Provide comprehensive rules of the game for user reference
-      - Ensure users have the option to restart the game at any point
-
+     - Create a Noughts and Crosses (Tic-Tac-Toe) game which is straightforward and clear to users
+     - Ensure that new users can sign up successfully
+     - Ensure that existing users can log in without issues
+     - Handle and display any errors clearly to the user
+     - Make sure users can easily understand how to play the game
+     - Provide comprehensive rules of the game for user reference
+     - Ensure users have the option to restart the game at any point
 
    ## User Experience
    ### Target Audience
@@ -159,3 +158,9 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
 
 ### Users
 
+1. I want users to be able to sign up easily if they are new.
+2. I want users to be able to log in smoothly if they are returning players.
+3. I want users to be promptly informed of any errors in an understandable way.
+4. I want users to easily grasp how to play the game.
+5. I want users to have access to comprehensive game rules
+6. I want users to have the option to restart the game whenever they wish.
