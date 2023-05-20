@@ -118,17 +118,37 @@ class NoughtsAndCrossesBoard:
 
     def play_game(self):
         """
-        Main game loop: print board, accept player input, and check for game end conditions  # noqa
+        Main game loop: print board, accept player input,
+        and check for game end conditions.
         """
         print("Welcome to Noughts and Crosses!")
         self.print_board()
 
         while True:
-            row, column = map(int, input(
-                "Enter the row (0-2) and column (0-2): ").split())
-            if not self.game.make_move(row, column):
-                print("Invalid move. Try again.")
+            try:
+                player_input = input(
+                    "Enter the row (0-2) and column (0-2), "
+                    "separated by a space: "
+                )
+                # Check if the input consists of two numbers from 0-2,
+                # separated by a space.
+                row, column = map(int, player_input.split())
+                if row not in [0, 1, 2] or column not in [0, 1, 2]:
+                    print("Invalid input. Only enter numbers 0, 1 or 2.")
+                    continue
+                # Validate if the chosen spot on the board is already occupied.
+                if not self.game.make_move(row, column):
+                    print("Invalid move. This spot is already occupied.")
+                    continue
+            except ValueError:
+                # In case of non-integer or non-space separated values, ask
+                # the user to try again.
+                print(
+                    "Invalid input. Make sure to enter two numbers "
+                    "separated by a space."
+                )
                 continue
+
             cls()
             self.print_board()
 
@@ -177,4 +197,3 @@ if __name__ == "__main__":
     Run the Noughts and Crosses game if the script is executed directly
     """
     lets_play_noughts_and_crosses()
-

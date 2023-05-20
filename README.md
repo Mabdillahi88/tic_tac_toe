@@ -128,3 +128,7 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
 #### Rules
 
 - Once players have been logged in, they will be shown the rules.
+
+#### Start Game
+
+ - 
