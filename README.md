@@ -158,9 +158,17 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
 
 ### Users
 
-1. I want users to be able to sign up easily if they are new.
-2. I want users to be able to log in smoothly if they are returning players.
-3. I want users to be promptly informed of any errors in an understandable way.
-4. I want users to easily grasp how to play the game.
-5. I want users to have access to comprehensive game rules
-6. I want users to have the option to restart the game whenever they wish.
+1.  I want users to be able to sign up easily if they are new.
+2.  I want users to be able to log in smoothly if they are returning players.
+3.  I want users to be promptly informed of any errors in an understandable way.
+4.  I want users to easily grasp how to play the game.
+5.  I want users to have access to comprehensive game rules
+6.  I want users to have the option to restart the game whenever they wish.
+
+### Site Owner
+
+7.  As a site owner, I wish for users to enjoy their gaming experience.
+8.  As a site owner, I aim to store usernames and passwords securely in Google Spreadsheet.
+9.  As a site owner, I desire to provide clear error messages for incorrect user input.
+10. As a site owner, I strive to validate input data for correct user entry formatting.
+11. As a site owner, I want users to be greeted by their own names after they log in.
