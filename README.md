@@ -50,3 +50,10 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
 
     ## Project Goals
     ### User Stories
+
+    - Play Noughts and Crosses (Tic-Tac-Toe) game
+    - Be able to sign up as a new user
+    - Be able to login as an existing user
+    - Be able to read the rules
+    - Be able to restart the game
+    - Be able to use on different media (desktop, mobile, etc.)
