@@ -181,3 +181,26 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
 
 
     ![Nought and Crosses Flowchart](/assets/screen_images/Lucid_Flow_Chart.JPG)
+
+
+## Technology Used
+### Language Used
+
+  - Python
+
+### Built-in Python Libraries
+
+   - sys -    Provides access to some variables used or maintained by the Python interpreter and to 
+              functions that interact strongly with the interpreter.
+   - time -   Used for time-related tasks. 
+   - os     - Provides a way of using operating system dependent functionality. os.system is used to 
+              clear the terminal screen.
+   - random -  Used to generate random numbers. In your script, it's used to randomly select the starting 
+               player.
+
+### 3rd Party Python Libraries
+
+   - gspread -  A Python client library for Google Sheets. 
+   - google.oauth2.service_account.Credentials -  A module from Google's OAuth 2.0 client library is used 
+                                                  for service account credentials
+   - email_validator -  checks if email addresses are real and correctly written
