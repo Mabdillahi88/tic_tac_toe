@@ -118,3 +118,11 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
      - They input their username.
      - They input their password.
 
+#### Player's greeting
+
+- After they successfully log in, the Noughts and Crosses game welcomes them with a greeting message, 
+  prominently displaying their username.
+
+#### Rules
+
+- Once players have been logged in, they will be shown the rules.
