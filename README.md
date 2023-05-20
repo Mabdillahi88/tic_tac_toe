@@ -94,6 +94,8 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
    ### Game instructions
 <details><summary>Click here to view instructions</summary>
 
+#### Load Game
+
  - Upon launching the Noughts and Crosses game, users are given two options: to log in if they are 
    returning players, or to register if they are new to the game.
 
