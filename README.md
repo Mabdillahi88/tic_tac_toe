@@ -97,5 +97,24 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
  - Upon launching the Noughts and Crosses game, users are given two options: to log in if they are 
    returning players, or to register if they are new to the game.
 
-   
+   #### Register
+
+   - If you're new to Noughts and Crosses, you'll need to make an account.
+   - You'll just need to pick a name and password for your account.
+   - After you're done signing up, you can log in and start playing.
+   - Here's what you do:
+     - Pick a username you like.
+     - Choose a password to keep your account safe.
+
+   #### Login
+
+   - If they have played Noughts and Crosses before, they'll enter their username and password.
+   - If the details match with the data, they will be logged in immediately.
+   - They will be greeted with a welcome message displaying their name on the screen.
+   - If they make an error while inputting their details, there's no problem. They can try again.
+   - If their account isn't recognized, they'll be asked:
+     - "register or login, please choose option 1 or 2". 
+   - You will choose option 1:
+     - They input their username.
+     - They input their password.
 
