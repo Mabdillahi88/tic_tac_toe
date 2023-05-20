@@ -200,7 +200,16 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
 
 ### 3rd Party Python Libraries
 
-   - gspread -  A Python client library for Google Sheets. 
-   - google.oauth2.service_account.Credentials -  A module from Google's OAuth 2.0 client library is used 
-                                                  for service account credentials
+   - gspread -  It's a Python library that helps us work with Google Sheets. We can read, write, and 
+                manipulate data in Google Sheets using this library.
+   - google.oauth2.service_account.Credentials -  to authenticate using service account credentials and 
+                                                  access Google services like Sheets.
    - email_validator -  checks if email addresses are real and correctly written
+
+
+###  Websites and applications
+
+ - GitHub     -  File storage and version control.
+ - GitPod     -  Coding environment.
+ - Lucidchart -   Flowchart creation.
+ - Heroku     -  Website deployment.
