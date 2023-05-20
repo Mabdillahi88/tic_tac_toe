@@ -46,3 +46,7 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
     - [Deploying in Heroku](#deploying-the-website-in-heroko)
     - [Forking the GitHub Repository](#forking-the-github-repository)
     - [Cloning of Repository i GitHub](#cloning-the-repository-in-github)
+
+
+    ## Project Goals
+    ### User Stories
