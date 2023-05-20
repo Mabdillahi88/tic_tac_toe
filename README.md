@@ -172,3 +172,16 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
 9.  As a site owner, I desire to provide clear error messages for incorrect user input.
 10. As a site owner, I strive to validate input data for correct user entry formatting.
 11. As a site owner, I want users to be greeted by their own names after they log in.
+
+## Technical Design
+
+## FlowChart
+
+- [Lucidchart](https://www.lucidchart.com) help construct the flowchart below:
+
+<details>
+    <summary>Flowchart</summary>
+    <p>Nought and Crosses Flowchart</p>
+
+    ![Nought and Crosses Flowchart](/assets/screen_images/Lucid_Flow_Chart.JPG)
+</details>
