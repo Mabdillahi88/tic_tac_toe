@@ -525,7 +525,6 @@ Game tested and deployed successfully on the following devices and browsers:
  - https://www.youtube.com/watch?v=M3G1ZgOMFxo
 
 
-
 ### Acknowledgements
 
 I want to express my deepest appreciation to:
