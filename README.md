@@ -371,6 +371,7 @@ User stories covered: 6
 
    ![google sheet data ](/assets/screen_images/add_new%20_users.JPG)
 
+
 9.  As a site owner, I desire to provide clear error messages for incorrect user input.
 
  | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
@@ -378,3 +379,21 @@ User stories covered: 6
 | Error Handling | Input invalid data | Clear error message displayed | Works as expected
 
    ![clear error message ](/assets/screen_images/errors_game_mode.JPG)
+
+
+10. As a site owner, I strive to validate input data for correct user entry formatting.
+
+ | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Input Validation | User enters data | System validates data format correctly | Works as expected
+
+   ![system validation message ](/assets/screen_images/validation_input_correct.JPG)
+
+
+11. As a site owner, I want users to be greeted by their own names after they log in.
+
+ | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Personalized Greeting | User logs in | User greeted by name | Works as expected
+
+   ![welcome message ](/assets/screen_images/welcome_message.JPG)
