@@ -441,4 +441,26 @@ Game tested and deployed successfully on the following devices and browsers:
 
        ![login heroku  ](/assets/heroku/login_heroku.JPG)
 
+#### Creating an app
+2. Navigate to the top right of the screen and select "Create New App".
+3. Input your desired app name.
+4. Choose the appropriate region.
+5. Finally, click on "Create App".
 
+       ![Creating an app  ](/assets/heroku/design_app.JPG)
+
+
+#### Navigate to the "Settings" tab
+  ##### Click on "Config Vars
+   - Store your "CREDS" file from GitPod as a key, and input its corresponding values.
+  - Store "PORT" as a key, and input its corresponding value.
+
+       ![Config Vars  ](/assets/heroku/conf_var.JPG)
+
+
+
+##### Navigate to "Buildpacks"
+  - Add the Python buildpack first by clicking on "Add Buildpack" and selecting Python.
+  - Next, add the Node.js buildpack by clicking on "Add Buildpack" again and selecting Node.js.
+
+       ![buildpacks  ](/assets/heroku/Buildpack.JPG)
