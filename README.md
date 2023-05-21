@@ -128,7 +128,7 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
 
 #### Start Game Mode
 
- - After the users read the rules, the game begins without delay.
+ - Upon reviewing the rules, the game commences promptly.
 
  #### Game Mode
 
@@ -138,7 +138,7 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
   - If the chosen cell is already occupied or if the input is invalid, an error is displayed.
   - The game continues until one player gets three of their marks in a row, column, or diagonal, at which 
      point they win.
-  - If all cells are filled and no player has won, the game is a draw.
+  - If all cells are occupied without a winning player, the game results in a draw.
 
   #### Restart Game Mode
 
