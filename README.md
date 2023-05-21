@@ -508,3 +508,35 @@ Game tested and deployed successfully on the following devices and browsers:
 6. Type git clone and paste the URL you copied earlier (it should look something like this: git clone 7. 
   https://github.com/YOUR-USERNAME/YOUR-REPOSITORY).
 7. Press "Enter" to create your local clone.
+
+
+## Credits
+
+### Content
+- The idea for the Noughts and Crosses game was inspired by the universally popular Tic Tac Toe game.
+
+### Code
+#### python lesson on [Love Sandwiches] by Code institute
+
+-  The validate_user_details function implementation.
+-  The method of importing gspread.
+-  The process of importing Credentials from google.oauth2.service_account.
+
+#### A significant amount of inspiration was drawn from the following online videos:
+
+ - https://www.youtube.com/watch?v=dK6gJw4-NCo
+ - https://www.youtube.com/watch?v=M3G1ZgOMFxo
+
+
+
+### Acknowledgements
+
+I want to express my deepest appreciation to:
+
+ - My wife, Filsan, for her enduring patience, love, and motivation. Her willingness to provide me with 
+   uninterrupted time away from our young children to work on this project is deeply appreciated.
+ - My mentor, Mo Shami, for his invaluable feedback, guidance, and ongoing support throughout the 
+   development of this project.
+
+
+
