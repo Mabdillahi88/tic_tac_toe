@@ -491,4 +491,20 @@ Game tested and deployed successfully on the following devices and browsers:
 
   ![final deploy  ](/assets/heroku/final_deploy.JPG)
 
-  
+
+  ### Navigate to the GitHub Repository.
+1. Go to the GitHub repository
+2. Click on the "Fork" button located at the top right corner of the page.
+3. This action will create a personal copy of the repository in your own GitHub account.
+4. [GitHub Repository](https://github.com/Mabdillahi88/tic_tac_toe)
+
+  ### Cloning the repository in GitHub
+
+1. Navigate to the desired GitHub repository.
+2. Find the "Code" button above the list of files and click it.
+3. Ensure the "HTTPS" option is selected and copy the displayed link.
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory to be.
+6. Type git clone and paste the URL you copied earlier (it should look something like this: git clone 7. 
+  https://github.com/YOUR-USERNAME/YOUR-REPOSITORY).
+7. Press "Enter" to create your local clone.
