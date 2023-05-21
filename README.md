@@ -270,3 +270,22 @@ User stories covered: 3, 9, 10
 User stories covered: 4, 5, 7
 
   ![Rules for the game](/assets/screen_images/rules_game.JPG)
+
+
+   ### Game mode
+
+   - During the game, if players do not follow the correct conventions for making moves, error messages 
+     will appear to indicate the invalid input.
+     
+User stories covered: 3, 4, 5, 9, 10
+
+  ![Game mode](/assets/screen_images/errors_game_mode.JPG)
+
+
+  ### Restart Game
+
+  Once the game finished, user will give the option to replay. if yes is selected, game will restart. if no is selected the game returns to the login/register page
+
+User stories covered: 6
+
+   ![Restart game](/assets/screen_images/restart_game.JPG)
