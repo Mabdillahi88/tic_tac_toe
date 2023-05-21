@@ -58,7 +58,6 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
      - Be able to restart the game
      - Be able to use on different media (desktop, mobile, etc.)
 
-
     ## Site Owner
 
      - Create a Noughts and Crosses (Tic-Tac-Toe) game which is straightforward and clear to users
@@ -79,7 +78,6 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
      Thus, it is not only fun but also beneficial for cognitive development.
    - It's an excellent choice for people who want to engage in a quick and casual game, whether they're 
      looking to kill time or to engage in a friendly competition.
-
 
    ### User Requirements
 
