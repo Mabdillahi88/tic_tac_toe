@@ -471,3 +471,24 @@ Game tested and deployed successfully on the following devices and browsers:
   - If necessary, login to your GitHub account when prompted.
 
        ![connect github  ](/assets/heroku/connect_github.JPG)
+
+
+  ##### Connect to Github
+  - Under "Connect to GitHub", select the repositories you wish to connect to your app.
+  - Click on "Connect".
+
+  ![connect repo  ](/assets/heroku/connect_repo.JPG)
+
+    ##### Automatic and Manual deploy
+  - Select your preferred method of deployment under "Automatic Deploys" or "Manual Deploy".
+  - After clicking "Deploy", it will start the deployment process and install various necessary files.
+
+  ![deploy automatic  ](/assets/heroku/deploy_automatic.JPG)
+
+    ##### Final Deployment
+  - Upon completion of the deployment, a "View" button will appear.
+  - Click this button to open your website.
+
+  ![final deploy  ](/assets/heroku/final_deploy.JPG)
+
+  
