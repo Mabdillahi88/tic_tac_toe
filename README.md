@@ -331,7 +331,7 @@ User stories covered: 6
 
  | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
 | ------------- | ----------------------------- | ---------------------------- | ----------------- |
-| rules are explain in simple and stucture layout| users know how to play the game | User will play the game correctly| Works as expected
+| image of noughts and crosses with clear and concise instructions| users will know how to play the game | users will play the game correctly| Works as expected
 
    ![rules](/assets/screen_images/rules_game.JPG)
 
@@ -340,7 +340,41 @@ User stories covered: 6
 
  | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
 | ------------- | ----------------------------- | ---------------------------- | ----------------- |
-| rules are explain in simple and stucture layout| users know how to play the game | User will play the game correctly| Works as expected
+| rules are explain in simple and stucture layout| users will know how to play the game | users will play the game correctly| Works as expected
 
    ![rules](/assets/screen_images/rules_game.JPG)
 
+
+6.  I want users to have the option to restart the game whenever they wish.
+
+ | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| users will be given the option to play again or leave the game| users will press Y for playing again or N for leaving the game | users will be able to play again or leave the game | Works as expected
+
+   ![restarting the game](/assets/screen_images/restart_game.JPG)
+
+
+7.  As a site owner, I wish for users to enjoy their gaming experience.
+
+ | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Engaging visual for Noughts and Crosses game| View the game board | Game board is visually engaging| Works as expected
+
+   ![Game board](/assets/screen_images/game_board.JPG)
+
+
+8.  As a site owner, I aim to store usernames and passwords securely in Google Spreadsheet.
+
+ | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| User Data Storage in Google Sheet| User logs in or registers for the first time | Data stored in Google Sheet | Works as expected
+
+   ![google sheet data ](/assets/screen_images/add_new%20_users.JPG)
+
+9.  As a site owner, I desire to provide clear error messages for incorrect user input.
+
+ | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Error Handling | Input invalid data | Clear error message displayed | Works as expected
+
+   ![clear error message ](/assets/screen_images/errors_game_mode.JPG)
