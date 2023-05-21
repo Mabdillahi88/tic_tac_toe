@@ -71,13 +71,13 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
    ## User Experience
    ### Target Audience
 
-   - Noughts and Crosses, also known as Tic-Tac-Toe, is a game that appeals to a broad audience.
-   - The game is family-friendly, involving no inappropriate content, making it suitable for children, 
-     adults, and the elderly alike.
-   - While the game is simple to understand, it helps foster critical thinking and strategic skills.  
-     Thus, it is not only fun but also beneficial for cognitive development.
-   - It's an excellent choice for people who want to engage in a quick and casual game, whether they're 
-     looking to kill time or to engage in a friendly competition.
+     - Noughts and Crosses, also known as Tic-Tac-Toe, is a game that appeals to a broad audience.
+     - The game is family-friendly, involving no inappropriate content, making it suitable for children, 
+       adults, and the elderly alike.
+     - While the game is simple to understand, it helps foster critical thinking and strategic skills.  
+       Thus, it is not only fun but also beneficial for cognitive development.
+     - It's an excellent choice for people who want to engage in a quick and casual game, whether they're 
+       looking to kill time or to engage in a friendly competition.
 
    ### User Requirements
 
