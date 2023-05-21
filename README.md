@@ -464,3 +464,10 @@ Game tested and deployed successfully on the following devices and browsers:
   - Next, add the Node.js buildpack by clicking on "Add Buildpack" again and selecting Node.js.
 
        ![buildpacks  ](/assets/heroku/Buildpack.JPG)
+
+
+#### Navigate to the "Deploy" tab.
+##### Under "Deployment Method", choose "GitHub" to connect your GitHub account.
+  - If necessary, login to your GitHub account when prompted.
+
+       ![connect github  ](/assets/heroku/connect_github.JPG)
