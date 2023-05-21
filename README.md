@@ -83,11 +83,11 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
 
       - A classic and engaging game, offering a balance of strategy and fun.
       - Simple and intuitive navigation, making the game of Noughts and Crosses easy to play even for 
-     beginners.
-   - Personalisation of game experience by allowing the input of players' names, adding a personal    
-     competitive edge to the matches.
-   - Secure and reliable log-in functionality, ensuring that only correctly authenticated users gain 
-     access to their accounts for a safe and trusted gaming experience.
+        beginners.
+      - Personalisation of game experience by allowing the input of players' names, adding a personal    
+        competitive edge to the matches.
+      - Secure and reliable log-in functionality, ensuring that only correctly authenticated users gain 
+        access to their accounts for a safe and trusted gaming experience.
 
    ### Game instructions
 <details><summary>Click here to view instructions</summary>
