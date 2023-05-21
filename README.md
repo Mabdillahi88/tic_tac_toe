@@ -304,4 +304,43 @@ User stories covered: 6
 
  | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
 | ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Option 2: login for new users | Choose option 2 | User will be asked username and email address| Works as expected
+
+   ![login option 2](/assets/screen_images/testing_user_stories2.JPG)
+
+
+2.  I want users to be able to log in smoothly if they are returning players.
+
+ | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
 | Option 1: login for existing users | Choose option 1 | User will be asked username and email address| Works as expected
+
+   ![login option 1](/assets/screen_images/user%20login_register1.JPG)
+
+
+3.  I want users to be promptly informed of any errors in an understandable way.
+
+ | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| error message highlight what went wrong| error message shown | User will know how to correct the error message| Works as expected
+
+   ![error message](/assets/screen_images/errors_game_mode.JPG)
+
+
+4.  I want users to easily grasp how to play the game.
+
+ | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| rules are explain in simple and stucture layout| users know how to play the game | User will play the game correctly| Works as expected
+
+   ![rules](/assets/screen_images/rules_game.JPG)
+
+
+5.  I want users to have access to comprehensive game rules
+
+ | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| rules are explain in simple and stucture layout| users know how to play the game | User will play the game correctly| Works as expected
+
+   ![rules](/assets/screen_images/rules_game.JPG)
+
