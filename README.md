@@ -397,3 +397,25 @@ User stories covered: 6
 | Personalized Greeting | User logs in | User greeted by name | Works as expected
 
    ![welcome message ](/assets/screen_images/welcome_message.JPG)
+
+   ### Testing on Web Browsers and devices
+
+Game tested and deployed successfully on the following devices and browsers:
+
+ - Chrome and Safari browsers.
+ - iPhone 13: Safari
+ - Microsoft Surface Pro 7
+
+### Validation
+#### PEP8 Python Validator
+
+ - Code validation was done using the PEP8 Python Validator available at https://pep8ci.herokuapp.com/
+
+  - The code was validated using the PEP8 Python Validator, a tool offered by Code Institute. No errors 
+    were found during the validation process.
+
+       ![run file  ](/assets/screen_images/pep8%20validation%20run.py%20file.JPG)
+
+       ![vaildation2 file ](/assets/screen_images/pep8%20validation%20run.py%20file.JPG)
+
+
