@@ -180,7 +180,6 @@ It's all about outsmarting your opponent and predicting their moves. Enjoy!
 
     ![Nought and Crosses Flowchart](/assets/screen_images/Lucid_Flow_Chart.JPG)
 
-
 ## Technology Used
 ### Language Used
 
@@ -268,7 +267,6 @@ User stories covered: 3, 9, 10
 User stories covered: 4, 5, 7
 
   ![Rules for the game](/assets/screen_images/rules_game.JPG)
-
 
    ### Game mode
 
