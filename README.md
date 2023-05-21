@@ -289,3 +289,19 @@ User stories covered: 3, 4, 5, 9, 10
 User stories covered: 6
 
    ![Restart game](/assets/screen_images/restart_game.JPG)
+
+
+## Testing
+
+ - Performed testing of user stories to ensure proper implementation and functionality.
+ - Tested the application on different browsers and devices to ensure compatibility.
+ - Conducted validator testing to validate code compliance and identify any issues.
+
+
+ ###  Testing
+
+ 1.  I want users to be able to sign up easily if they are new.
+
+ | **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
+| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+| Option 1: login for existing users | Choose option 1 | User will be asked username and email address| Works as expected
