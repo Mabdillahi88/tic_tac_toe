@@ -189,7 +189,9 @@ def lets_play_noughts_and_crosses():
 
         choice = input("Do you want to play again? (Y/N): ")
         if choice.lower() != "y":
+            print("Goodbye!")  # The 'goodbye' message
             break
+
 
 
 if __name__ == "__main__":

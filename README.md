@@ -419,3 +419,26 @@ Game tested and deployed successfully on the following devices and browsers:
        ![vaildation2 file ](/assets/screen_images/pep8%20validation%20run.py%20file.JPG)
 
 
+### Bugs and Fixes
+
+| **Bugs** | **Fixes** |
+| ------- | ------- |
+| Invalid input in Noughts and Crosses (missing space)| Add input validation for correct format|
+
+### Unfixed Bugs
+
+- all bugs fixed
+
+## Deployment
+
+### Deploying in Heroku
+
+- The website was deployed to Heroku using following stages
+
+#### create an account at Heroku then login
+
+1. create an account at Heroku then login
+
+       ![login heroku  ](/assets/heroku/login_heroku.JPG)
+
+
